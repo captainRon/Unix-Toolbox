@@ -2594,6 +2594,15 @@ Be careful with xarg or exec as it might or might not honor quotings and can ret
 # history | tail -50                 <span class="cmt"># Display the last 50 used commands</span>
 # cd -                               <span class="cmt"># cd to previous ($OLDPWD) directory</span>
 </pre>
+For Mac OS (and maybe other systems too...)
+<pre># file path                          <span class="cmt"># Identify content type of a file</span>
+# hexdump -C path                    <span class="cmt"># Show the hexdump plus ASCII translation of a file</span>
+# file path                          <span class="cmt"># Identify content type of file</span>
+# strings path                       <span class="cmt"># Extracts string-like sequences of bytes from a file</span>
+# plutil -convert xml1 path.plist    <span class="cmt"># Convert a MacOS PLIST-file to XML</span>
+# plutil -p path.plist               <span class="cmt"># Print property list in a human-readable fashion</span>
+
+</pre>
 Check file hashes with openssl. This is a nice alternative to the commands <code>md5sum</code> or <code>sha1sum</code> (FreeBSD uses <code>md5</code> and <code>sha1</code>) which are not always installed.
 <pre># openssl md5 file.tar.gz            <span class="cmt"># Generate an md5 checksum from file</span>
 # openssl sha1 file.tar.gz           <span class="cmt"># Generate an sha1 checksum from file</span>
