@@ -771,6 +771,8 @@ However more typical usage is with a pipe or with <code>pgrep</code> (for OS X i
   586  ??  Is     0:01.48 /usr/sbin/cron -s
 # ps axjf                            <span class="cmt"># All processes in a tree format (Linux)</span>
 # ps aux | grep 'ss[h]'              <span class="cmt"># Find all ssh pids without the grep pid</span>
+# ps -o etime= -p PID                <span class="cmt"># How long was the process PID active</span>
+# ps -o lstart= -o etime= -p PID     <span class="cmt"># When was process PID started</span>
 # pgrep -l sshd                      <span class="cmt"># Find the PIDs of processes by (part of) name</span>
 # echo $$                            <span class="cmt"># The PID of your shell</span>
 # fuser -va 22/tcp                   <span class="cmt"># List processes using port 22 (Linux)</span>
